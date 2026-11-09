@@ -1,0 +1,29 @@
+# ---- 构建目录 ----
+build/
+cmake-build-*/
+
+# ---- 编译产物 ----
+# CMake 把可执行文件输出到 bin/，但该目录下的压测脚本
+# (benchmark_*.sh / post_*.lua) 属于源码，需要入库，因此只忽略二进制本身
+bin/Server
+bin/Server.exe
+bin/testHttpParser
+bin/testReactors
+bin/testlog
+bin/testMysqlPool
+*.o
+*.a
+*.so
+
+# ---- 运行日志 ----
+*.log
+*.log.*
+
+# ---- 编辑器 / IDE ----
+.vscode/
+.idea/
+*.swp
+
+# ---- 本地文档（不上传 GitHub） ----
+PROJECT.md
+docs/

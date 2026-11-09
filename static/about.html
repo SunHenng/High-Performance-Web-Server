@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Modern Web Server</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f0f0f0; }
+        .container { max-width: 800px; margin: 40px auto; padding: 30px; background: white; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        h1 { color: #333; text-align: center; }
+        p { color: #666; line-height: 1.6; }
+        .nav { text-align: center; margin-top: 30px; }
+        .nav a { margin: 0 12px; text-decoration: none; color: #0066cc; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>About</h1>
+        <p>This web server is built with modern C++ and uses the following components:</p>
+        <ul>
+            <li><strong>Reactor Pattern:</strong> Event-driven architecture for handling concurrent connections</li>
+            <li><strong>epoll:</strong> Linux I/O multiplexing for high performance</li>
+            <li><strong>Thread Pool:</strong> Parallel processing for CPU-intensive tasks</li>
+            <li><strong>HTTP Parsing:</strong> Built-in HTTP/1.1 request and response handling</li>
+            <li><strong>Static File Serving:</strong> Efficient delivery of web content</li>
+            <li><strong>User Authentication:</strong> Login and registration backed by MySQL</li>
+        </ul>
+        <div class="nav">
+            <a href="/">Home</a>
+            <a href="/about.html">About</a>
+            <a href="/login.html">Login</a>
+            <a href="/register.html">Register</a>
+        </div>
+    </div>
+</body>
+</html>
